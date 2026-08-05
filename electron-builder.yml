@@ -1,5 +1,5 @@
 productName: sing-box
-copyright: nekohasekai
+copyright: oixcloud3rd
 publish: null
 afterPack: scripts/afterPack.cjs
 afterSign: scripts/afterSign.cjs
@@ -47,8 +47,8 @@ fileAssociations:
     description: sing-box profile
     mimeType: application/x-sing-box-profile
 win:
-  appId: io.nekohasekai.sfw
-  forceCodeSigning: true
+  appId: com.akinokaede.oixcloud3rd.sfw
+  forceCodeSigning: false
   icon: resources/icon.ico
   signtoolOptions:
     signingHashAlgorithms:
@@ -97,14 +97,14 @@ nsis:
   include: build/installer.nsh
   artifactName: SFW-${version}-${env.SFW_ARCHITECTURE}.${ext}
 linux:
-  appId: io.nekohasekai.sfl
+  appId: com.akinokaede.oixcloud3rd.sfl
   syncDesktopName: true
   executableName: sing-box
   icon: resources/icons
   synopsis: The universal proxy platform
   category: Network
-  maintainer: 世界 <i@sekai.icu>
-  vendor: SagerNet
+  maintainer: oixcloud3rd
+  vendor: oixcloud3rd
   protocols:
     - name: sing-box
       schemes:
@@ -141,8 +141,8 @@ deb:
     - --before-remove=build/linux-before-remove.sh
     - build/sing-box-daemon.service=/usr/lib/systemd/system/sing-box-daemon.service
     - build/sing-box-daemon.preset=/usr/lib/systemd/system-preset/80-sing-box-daemon.preset
-    - build/io.nekohasekai.sfl.policy=/usr/share/polkit-1/actions/io.nekohasekai.sfl.policy
-    - build/io.nekohasekai.sfl.metainfo.xml=/usr/share/metainfo/io.nekohasekai.sfl.metainfo.xml
+    - build/com.akinokaede.oixcloud3rd.sfl.policy=/usr/share/polkit-1/actions/com.akinokaede.oixcloud3rd.sfl.policy
+    - build/com.akinokaede.oixcloud3rd.sfl.metainfo.xml=/usr/share/metainfo/com.akinokaede.oixcloud3rd.sfl.metainfo.xml
 rpm:
   packageCategory: Applications/Internet
   afterInstall: build/linux-after-install.sh
@@ -157,8 +157,8 @@ rpm:
     - --before-remove=build/linux-before-remove.sh
     - build/sing-box-daemon.service=/usr/lib/systemd/system/sing-box-daemon.service
     - build/sing-box-daemon.preset=/usr/lib/systemd/system-preset/80-sing-box-daemon.preset
-    - build/io.nekohasekai.sfl.policy=/usr/share/polkit-1/actions/io.nekohasekai.sfl.policy
-    - build/io.nekohasekai.sfl.metainfo.xml=/usr/share/metainfo/io.nekohasekai.sfl.metainfo.xml
+    - build/com.akinokaede.oixcloud3rd.sfl.policy=/usr/share/polkit-1/actions/com.akinokaede.oixcloud3rd.sfl.policy
+    - build/com.akinokaede.oixcloud3rd.sfl.metainfo.xml=/usr/share/metainfo/com.akinokaede.oixcloud3rd.sfl.metainfo.xml
 pacman:
   artifactName: SFL-${version}-${arch}.pkg.tar.zst
   packageCategory: network
@@ -186,5 +186,5 @@ pacman:
     - --after-upgrade=build/linux-after-install-pacman.sh
     - build/sing-box-daemon.service=/usr/lib/systemd/system/sing-box-daemon.service
     - build/sing-box-daemon.preset=/usr/lib/systemd/system-preset/80-sing-box-daemon.preset
-    - build/io.nekohasekai.sfl.policy=/usr/share/polkit-1/actions/io.nekohasekai.sfl.policy
-    - build/io.nekohasekai.sfl.metainfo.xml=/usr/share/metainfo/io.nekohasekai.sfl.metainfo.xml
+    - build/com.akinokaede.oixcloud3rd.sfl.policy=/usr/share/polkit-1/actions/com.akinokaede.oixcloud3rd.sfl.policy
+    - build/com.akinokaede.oixcloud3rd.sfl.metainfo.xml=/usr/share/metainfo/com.akinokaede.oixcloud3rd.sfl.metainfo.xml

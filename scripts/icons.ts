@@ -25,8 +25,8 @@ const linuxSizes = [512, 1024];
 // representation the NativeImage constructor reads.
 const windowsTraySizes = [16, 20, 24, 32, 48, 256];
 for (const [source, project] of [
-  [applicationIconSource, "https://github.com/SagerNet/sing-box"],
-  [statusBarIconSource, "https://github.com/SagerNet/sing-box-for-apple"],
+  [applicationIconSource, "https://github.com/oixcloud3rd/sing-box"],
+  [statusBarIconSource, "https://github.com/oixcloud3rd/sing-box-for-apple"],
 ]) {
   if (!fs.existsSync(source)) {
     console.error(`missing ${source}, clone ${project} next to this repository`);

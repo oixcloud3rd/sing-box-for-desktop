@@ -9,7 +9,7 @@ export interface WindowsInstallationLayout {
   daemonDataDirectory: string;
 }
 
-const installationRegistryPath = String.raw`SOFTWARE\SagerNet\sing-box`;
+const installationRegistryPath = String.raw`SOFTWARE\oixcloud3rd\sing-box`;
 
 const installationLayoutScript = String.raw`
 $ErrorActionPreference = "Stop"
