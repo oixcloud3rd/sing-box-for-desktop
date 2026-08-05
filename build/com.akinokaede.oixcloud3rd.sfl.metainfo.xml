@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.nekohasekai.sfl</id>
+  <id>com.akinokaede.oixcloud3rd.sfl</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <name>sing-box</name>
@@ -12,12 +12,12 @@
     <keyword>network</keyword>
   </keywords>
   <launchable type="desktop-id">sing-box.desktop</launchable>
-  <developer id="io.nekohasekai">
-    <name>nekohasekai</name>
+  <developer id="com.akinokaede.oixcloud3rd">
+    <name>oixcloud3rd</name>
   </developer>
-  <url type="homepage">https://sing-box.sagernet.org/</url>
-  <url type="bugtracker">https://github.com/SagerNet/sing-box/issues</url>
-  <url type="vcs-browser">https://github.com/SagerNet/sing-box</url>
+  <url type="homepage">https://github.com/oixcloud3rd/sing-box</url>
+  <url type="bugtracker">https://github.com/oixcloud3rd/sing-box/issues</url>
+  <url type="vcs-browser">https://github.com/oixcloud3rd/sing-box</url>
   <provides>
     <binary>sing-box</binary>
     <mediatype>application/x-sing-box-profile</mediatype>

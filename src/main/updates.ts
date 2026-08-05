@@ -23,7 +23,7 @@ import { parseBooleanPreference, Preference } from "./database";
 import { desktopService } from "./daemon";
 import { userAgent } from "./userAgent";
 
-const RELEASES_URL = "https://api.github.com/repos/SagerNet/sing-box/releases";
+const RELEASES_URL = "https://api.github.com/repos/oixcloud3rd/sing-box/releases";
 const RELEASES_PER_PAGE = 100;
 const RELEASES_REQUEST_TIMEOUT_MILLISECONDS = 30_000;
 const EXIT_CODE_CANCELLED = 1223;
