@@ -4,7 +4,7 @@ SetFont "Segoe UI" 9
 
 !include WinMessages.nsh
 
-!define INSTALLATION_LAYOUT_REGISTRY_KEY "Software\SagerNet\sing-box"
+!define INSTALLATION_LAYOUT_REGISTRY_KEY "Software\oixcloud3rd\sing-box"
 !define TAILDROP_VERB_REGISTRY_KEY "Software\Classes\*\shell\Taildrop"
 
 !ifndef BUILD_UNINSTALLER
