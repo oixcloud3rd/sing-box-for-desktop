@@ -12,7 +12,7 @@
       <allow_active>auth_admin</allow_active>
     </defaults>
   </action>
-  <action id="io.nekohasekai.sfl.set-insecure-mode">
+  <action id="com.akinokaede.oixcloud3rd.sfl.set-insecure-mode">
     <description>Enable insecure mode for the sing-box service</description>
     <message>Authentication is required to allow sing-box configurations to use privileges unrelated to networking.</message>
     <defaults>
